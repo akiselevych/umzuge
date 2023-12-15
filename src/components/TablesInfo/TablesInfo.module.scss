@@ -1,0 +1,140 @@
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-sizing: border-box;
+
+  color: var(--Gray-1, #333);
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+}
+
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+	.content {
+		grid-template-columns: 1fr;
+	}
+	
+}
+
+.block {
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+
+  .value {
+    color: #00538e;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .goal {
+    color: #7a7a7a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    button img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.miniCards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  button {
+    cursor: pointer;
+    background: none;
+    width: min-content;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.singleValue {
+  color: #00538e;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.menu {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-radius: 10px;
+
+  button {
+    background-color: #f1eeee;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    text-align: start;
+    transition: 0.2s;
+
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &:hover {
+      background: #00538e;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Lucide Icon" clip-path="url(#clip0_1068_3424)">
+<path id="Vector" d="M3.5 12.8333V2.33332C3.5 2.17582 3.5 2.01249 3.54083 1.85499C3.58167 1.69749 3.6575 1.55166 3.77417 1.43499C3.885 1.31832 4.03083 1.24832 4.1825 1.20749C4.35167 1.16666 5.0925 1.16666 5.25 1.16666H9.33333C9.49083 1.16666 9.65417 1.16666 9.81167 1.20749C9.96917 1.24832 10.115 1.32416 10.2317 1.44082C10.3483 1.55166 10.4183 1.69749 10.4592 1.84916C10.5 2.01249 10.5 2.17582 10.5 2.33332V12.8333H3.5Z" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M1.16682 8.16667V11.6667C1.16682 12.3083 1.69182 12.8333 2.33349 12.8333H3.50016V7H2.33349C2.17599 7 2.01266 7 1.85516 7.04083C1.69766 7.08167 1.55182 7.1575 1.43516 7.27417C1.32432 7.385 1.24849 7.53083 1.20766 7.68833C1.17473 7.84554 1.16102 8.00616 1.16682 8.16667Z" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M12.145 5.29085C11.9878 5.25792 11.8272 5.24421 11.6667 5.25002H10.5V12.8333H11.6667C11.9761 12.8333 12.2728 12.7104 12.4916 12.4916C12.7104 12.2728 12.8333 11.9761 12.8333 11.6667V6.41668C12.8333 6.25335 12.8333 6.09585 12.7925 5.93835C12.7517 5.78085 12.6758 5.63502 12.5592 5.51835C12.4483 5.40752 12.3025 5.33168 12.145 5.29085V5.29085Z" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M5.8335 3.5H8.16683" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M5.8335 5.83334H8.16683" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M5.8335 8.16666H8.16683" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M5.8335 10.5H8.16683" stroke="#00538D" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1068_3424">
+<rect width="14" height="14" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,77 @@
+@use "../../styles/mixins" as m;
+
+.tableScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.tablesSection {
+  @include m.table-item;
+
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filterButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  .buttons {
+		width: 100%;
+    display: flex;
+    align-items: center;
+		justify-content: flex-end;
+    gap: 12px;
+
+    button {
+      line-height: 24px;
+    }
+  }
+}
+
+.addButton {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: #00538e;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.notification {
+  position: absolute;
+  bottom: 10%;
+  left: calc(45% - 127px);
+  visibility: hidden;
+}
+
+.tablesOptions {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

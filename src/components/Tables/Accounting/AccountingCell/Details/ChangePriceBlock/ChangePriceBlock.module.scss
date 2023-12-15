@@ -1,0 +1,114 @@
+.wrapper {
+  margin: 8px 0 32px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.priсeValue {
+	color: #575757;
+}
+.priceInput {
+	height: 20px;
+  padding-left: 8px;
+  width: 70px;
+  border-radius: 8px;
+  border: 1px solid #b0b0b0;
+  line-height: 20px;
+}
+
+.commentBlock {
+  position: relative;
+
+  .comment {
+    width: 100%;
+    height: 96px;
+    padding: 14px 10px 14px 16px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #b0b0b0;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .label {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    transition: 0.3s;
+    color: var(--Gray-1, #333);
+		border-radius: 6px;
+
+    &.active {
+      top: -8px;
+      left: 12px;
+      padding: 0px 4px;
+      background: #fff;
+    }
+  }
+}
+
+.buttonBlock {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+
+		img {
+			width: 16px;
+			height: 16px;
+		}
+  }
+}
+
+.editButton {
+  color: #fff;
+  background: #00538d;
+}
+
+.confirmButton {
+	background: none;
+	border: 1px solid rgb(18, 177, 18);
+
+	img {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	padding: 16px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+	border-bottom: 2px solid var(--Gray-6, #F2F2F2);
+}
+.name {
+  color: var(--Gray-1, #333);
+}
+.value {
+  color: var(--Grey-80, #bdbdbd);
+}

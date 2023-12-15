@@ -1,0 +1,48 @@
+.chartWrapper {
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .chart {
+        margin-bottom: 40px;
+    }
+
+    .chartRangeWrapper {
+        width: 776px;
+        .chart__range {
+            margin-left: 36px;
+        }
+    }
+}
+.toolBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.selectWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.total {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.totalName {
+    color: #939393;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+.totalValue {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+}

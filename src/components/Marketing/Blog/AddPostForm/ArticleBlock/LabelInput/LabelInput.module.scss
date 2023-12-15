@@ -1,0 +1,24 @@
+.block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  input {
+    width: auto;
+    color: #333;
+
+    &::placeholder {
+      color: #A8A8A8;
+    }
+  }
+}
+
+.subtitle {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}

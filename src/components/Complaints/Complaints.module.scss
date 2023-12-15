@@ -1,0 +1,60 @@
+.complaints {
+  width: 100%;
+
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .filtersPopUp {
+			transition: .2s;
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      display: flex;
+      gap: 24px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px 12px 20px 20px;
+      box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.08);
+
+      .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+				padding: 8px 0px;
+
+				.filter {
+					display: flex;
+					gap: 12px;
+				}
+      }
+
+      .close {
+        align-self: flex-start;
+        background: none;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+		.hidden {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-60px);
+		}
+  }
+  .messages {
+    overflow: auto;
+    height: 440px;
+  }
+}
+
+.notification {
+	position: absolute;
+  z-index: 100;
+  bottom: 3%;
+  left: calc(50% - 127px);
+	visibility: hidden;
+}

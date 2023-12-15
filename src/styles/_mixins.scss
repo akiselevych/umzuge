@@ -1,0 +1,6 @@
+@use "./variables" as v;
+
+@mixin table-item {
+  background-color: v.$primary-color;
+  border-radius: 12px;
+}

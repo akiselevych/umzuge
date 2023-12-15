@@ -1,0 +1,38 @@
+.container {
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 600px;
+    overflow: auto;
+}
+.tab {
+    width: 193px;
+    padding: 8px 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    a {
+        color: #00538e;
+    }
+}
+.activeTab {
+    color: #fff;
+    background-color: #00538e;
+    border-radius: 8px;
+    a {
+        color: #fff;
+    }
+}
+.divider {
+    width: 193px;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+.bigDivider {
+    font-weight: 800;
+    padding: 24px 0;
+    text-align: center;
+}

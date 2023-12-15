@@ -1,0 +1,70 @@
+.inputWrapper {
+  position: relative;
+  box-sizing: border-box;
+
+  .input {
+    border: 1px solid #ccc;
+    padding: 12px 14px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid var(--gray-5, #e0e0e0);
+
+    &:disabled {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .input:disabled + .inputLabel {
+    background: none !important;
+  }
+
+  .inputLabel {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    pointer-events: none;
+    color: #666;
+    transition: 0.2s ease all;
+
+    font-family: SF Pro Text, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  &.active {
+    .inputLabel {
+      top: -6px;
+      left: 10px;
+      background-color: white;
+    }
+  }
+}
+
+.passwordVisibility {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  right: 12px;
+  cursor: pointer;
+}
+
+.error {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "*";
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 3px;
+    font-size: 20px;
+    color: red;
+  }
+}

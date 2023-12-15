@@ -1,0 +1,86 @@
+.infoManagementWrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.3fr 1.2fr 1.2fr 1.5fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.confirmButton {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #00538d;
+
+  background: #fff;
+  color: #00538d;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+	transition: .2s;
+
+	&:hover {
+		background-color: #00538d;
+		color: #fff;
+	}
+}
+
+.inputWrapper {
+  position: relative;
+
+	.input {
+    width: 100%;
+    padding: 10px 10px 10px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--Gray-5, #e0e0e0);
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .label {
+		pointer-events: none;
+    padding: 0px 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 8px;
+
+    color: var(--Gray-1, #333);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    transition: 0.2s;
+  }
+
+  .active, .input:focus + .label {
+    background: #fff;
+    font-size: 12px;
+    top: -8px;
+    left: 8px;
+  }
+
+  optgroup {
+    font-weight: bold;
+  }
+
+  option {
+    font-weight: normal;
+  }
+}
+
+.timeInputWrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	color: var(--Gray-1, #333);
+	
+	.timeInput {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid var(--Gray-1, #333);
+	}
+}

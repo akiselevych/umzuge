@@ -1,0 +1,12 @@
+.editButton {
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--grey-80, #bdbdbd);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

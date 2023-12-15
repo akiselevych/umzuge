@@ -1,0 +1,45 @@
+.wrapper {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  button {
+		cursor: pointer;
+    border-radius: 10px;
+    background: #00538d;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+
+		&:disabled {
+			cursor: not-allowed;
+			opacity: 0.5;
+		}
+  }
+}
+
+.group {
+  position: relative;
+
+  .span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 10px);
+    transition: 0.2s;
+		background: #fff;
+  }
+
+  input:focus + .span,
+  .active {
+		top: -11px;
+  }
+}

@@ -1,0 +1,20 @@
+.tableList {
+	flex-shrink: 0;
+	border-radius: 8px;
+	border: 2px solid var(--gray-5, #e0e0e0);
+	cursor: default;
+	max-width: 130px;
+	word-break: break;
+
+	.tableName {
+		padding: 12px 28px 12px 14px;
+		box-sizing: border-box;
+
+		&:not(:last-child) {
+			border-bottom: 2px solid var(--gray-5, #e0e0e0);
+		}
+	}
+	.current {
+		background: #e0e0e0;
+	}
+}

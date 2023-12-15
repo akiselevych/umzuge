@@ -1,0 +1,59 @@
+.tablesBlock {
+	position: relative;
+  display: grid;
+  grid-template-columns: 42% 52%;
+  padding: 16px 0px;
+	justify-content: space-between;
+	border-bottom: 1px solid #F2F2F2;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 5%;
+		left: 45%;
+		width: 1px;
+		height: 90%;
+		background: #F2F2F2;
+	}
+}
+
+.tableBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row {
+  display: grid;
+  gap: 12px;
+
+  &:first-child {
+    margin-bottom: 8px;
+  }
+}
+
+.cell,
+.cellName {
+  padding: 10px;
+  border-radius: 8px;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.cell {
+  background: #f4f5f6;
+  color: var(--Blue, #00538e);
+  font-size: 12px;
+  font-weight: 400;
+}
+.cellName {
+  color: var(--Gray-1, #333);
+  font-size: 12px;
+  font-weight: 600;
+}

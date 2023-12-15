@@ -1,0 +1,88 @@
+.daysManagementWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .daysManagement {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+	.titleBlock {
+		display: flex;
+	}
+
+  .manageButton {
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: 1px solid #00538d;
+    background: #fff;
+    color: #00538d;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    transition: 0.2s;
+
+    &:hover {
+      background: #00538d;
+      color: #fff;
+    }
+  }
+
+  .changeCurrentDay {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .inputBlock {
+      position: relative;
+
+      input {
+        padding: 6px 16px;
+        border-radius: 10px;
+        border: 1px solid var(--Gray-5, #e0e0e0);
+        background: #fff;
+      }
+
+      span {
+        position: absolute;
+        top: -8px;
+        left: 12px;
+				background: #fff;
+				border-radius: 6px;
+				padding: 2px 4px;
+
+        color: var(--Gray-1, #333);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+      }
+    }
+
+    .changeCurrentDayButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: #f4f5f6;
+      padding: 4px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .prev {
+        rotate: 90deg;
+      }
+      .next {
+        rotate: -90deg;
+      }
+    }
+  }
+}

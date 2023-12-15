@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    color: var(--grey-80, #bdbdbd);
+}
+.item {
+    padding: 10px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.active {
+    background-color: #00538e;
+    color: #fff;
+}

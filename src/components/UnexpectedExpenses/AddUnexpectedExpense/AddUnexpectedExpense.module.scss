@@ -1,0 +1,29 @@
+.expenseForm {
+    margin: 50px 0 25px 0;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid var(--gray-5, #e0e0e0);
+    min-width: 1800px;
+    overflow: visible;
+}
+.expenseFormInput {
+    border: none;
+    border-right: 2px solid var(--gray-5, #e0e0e0);
+    padding: 10px;
+    width: 200px;
+    color: var(--gray-1, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+    width: 250px;
+}
+.submibtn {
+    width: 50px;
+}
+.errors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: red;
+}

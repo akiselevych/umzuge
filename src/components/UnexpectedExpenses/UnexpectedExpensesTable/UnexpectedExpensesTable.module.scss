@@ -1,0 +1,47 @@
+.table {
+    overflow: auto;
+    width: max-content;
+}
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 48px;
+}
+.tableHeaderTitle {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+.tableHeaderButton {
+    padding: 16px 32px;
+    border-radius: 10px;
+    background: #00538d;
+    color: #fff;
+}
+.imageBlock {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+.dayCallImage {
+    border: 1px solid #00487b;
+}
+.weekCellImage {
+    background: #78b8e5;
+}
+.twoWeeksCellImage {
+    background: #528eb8;
+}
+.threeWeeksCellImage {
+    background: #2970a2;
+}
+.monthCellImage {
+    background: #00487b;
+}

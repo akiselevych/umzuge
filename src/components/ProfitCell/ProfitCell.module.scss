@@ -1,0 +1,8 @@
+.cell {
+    padding: 12px;
+    min-width: 200px;
+    border: 1px solid #e0e0e0;
+    &:last-child {
+        width: 372px;
+    }
+}

@@ -1,0 +1,1 @@
+.tableList{flex-shrink:0;border-radius:8px;border:2px solid var(--gray-5, #e0e0e0);cursor:default}.tableList .tableName{padding:12px 28px 12px 16px;box-sizing:border-box}.tableList .tableName:not(:last-child){border-bottom:2px solid var(--gray-5, #e0e0e0)}.tableList .current{background:#e0e0e0}/*# sourceMappingURL=TablesList.module.css.map */

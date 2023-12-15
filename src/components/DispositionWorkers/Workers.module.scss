@@ -1,0 +1,38 @@
+.screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0px 0px;
+  }
+
+  button {
+    cursor: pointer;
+    background: none;
+
+    color: var(--Grey-80, #bdbdbd);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.table {
+  border-radius: 10px;
+  border: 2px solid var(--gray-5, #e0e0e0);
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.externalTable {
+  max-height: 48vh;
+}

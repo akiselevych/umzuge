@@ -1,0 +1,16 @@
+@use "styles/mixins" as m;
+
+.dispositionWorkflow {
+  @include m.table-item;
+
+  padding: 32px;
+}
+
+.notification {
+  position: absolute;
+  bottom: 6%;
+  left: calc(55% - 127px);
+	visibility: hidden;
+}
+
+

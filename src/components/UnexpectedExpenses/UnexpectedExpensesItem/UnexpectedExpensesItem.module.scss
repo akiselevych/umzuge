@@ -1,0 +1,29 @@
+.tableListItem {
+    position: relative;
+}
+.tableListCell {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    padding-right: 50px;
+    border: none;
+    width: 250px;
+    color: var(--gray-1, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-5, #e0e0e0);
+}
+.delete {
+    height: 16px;
+    width: 16px;
+}
+.deleteContainer {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0px;
+    background-color: #fff;
+    width: 22px;
+}

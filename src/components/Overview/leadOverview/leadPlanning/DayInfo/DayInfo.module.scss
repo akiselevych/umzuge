@@ -1,0 +1,58 @@
+.dayInfoWrapper {
+  display: flex;
+  justify-content: center;
+	overflow-y: auto;
+	max-height: 40vh;
+}
+
+.dayInfo {
+	height: 100%;
+  width: 740px;
+  border-radius: 14px;
+  border: 1px solid #a7a7a7;
+}
+
+.columnHeader,
+.columnCell {
+  padding: 10px;
+}
+.columnHeader {
+  border-right: 1px solid #bdbdbd;
+  opacity: 0.5;
+  background: #fff;
+
+  color: #181818;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+
+  &:first-child {
+    border-top-left-radius: 14px;
+  }
+  &:last-child {
+    border-right: none;
+    border-top-right-radius: 14px;
+  }
+}
+
+.columnCell {
+  color: var(--Gray-1, #333);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.sectionHeader {
+  padding: 10px;
+  background: #00538e;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 0.8fr 0.8fr 0.8fr;
+}

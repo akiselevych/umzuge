@@ -1,0 +1,112 @@
+.wraper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h1 {
+    color: var(--gray-1, #333);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 8px;
+  border: 2px solid var(--gray-5, #e0e0e0);
+  background-color: #e0e0e0;
+  max-height: 46vh;
+  overflow: auto;
+
+  header {
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 10px 12px;
+		border-radius: 8px 8px 0px 0px;
+		background-color: var(--blue, #00538e);
+		color: #fff;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px;
+		box-sizing: border-box;
+		z-index: 1;
+  }
+
+  .infoTable {
+    border-collapse: collapse;
+    width: max-content;
+    width: 100%;
+
+    th,
+    td {
+      width: min-content;
+      padding: 6px 8px;
+      border-right: 2px solid #e0e0e0;
+      border-bottom: 2px solid #e0e0e0;
+      box-sizing: border-box;
+      cursor: default;
+      background: #fff;
+
+      min-width: 100px;
+      max-width: 400px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .picker {
+    position: relative;
+    max-width: 300px;
+
+    input {
+      width: 300px !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      outline: none;
+      background: #fff;
+
+      padding: 6px 0px !important;
+      border: 1px solid var(--gray-5, #e0e0e0);
+    }
+
+    .span {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      position: absolute;
+      left: 16px;
+      top: -11px;
+      transition: 0.2s;
+      background: #fff;
+      z-index: 1;
+    }
+  }
+}

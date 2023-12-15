@@ -1,0 +1,81 @@
+@use "../../styles/variables" as v;
+
+.header {
+  width: 100%;
+  height: 96px;
+  background-color: v.$primary-color;
+  color: v.$text-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 48px 0px 50px;
+  box-sizing: border-box;
+
+  button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    .search {
+      position: relative;
+      .searchIcon,
+      .microphoneIcon {
+        position: absolute;
+        top: calc(50% - 12px);
+      }
+      .searchIcon {
+        left: 5px;
+      }
+      .microphoneIcon {
+        right: 5px;
+      }
+      input {
+        display: flex;
+        width: 358px;
+        height: 36px;
+        padding: 6px 0px 6px 30px;
+        font-size: 16px;
+        align-items: flex-start;
+        gap: 240px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: rgba(240, 242, 243, 0.75);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+    }
+
+    .complaints {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -24px;
+        width: 1px;
+        height: 40px;
+        background: radial-gradient(
+          4161599.73% 100% at 100% 0%,
+          rgba(236, 236, 236, 0.1) 0%,
+          #ececec 51.29%,
+          rgba(236, 236, 236, 0.1) 100%
+        );
+      }
+    }
+  }
+}

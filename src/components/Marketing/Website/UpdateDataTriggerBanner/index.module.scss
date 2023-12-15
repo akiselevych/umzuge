@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    border: 1px solid #00538e;
+    padding: 4px;
+}
+.link {
+    color: #00538e;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}

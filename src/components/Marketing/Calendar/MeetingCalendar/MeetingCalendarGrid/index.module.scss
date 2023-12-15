@@ -1,0 +1,11 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2px;
+
+  border-radius: 10px;
+  aspect-ratio: 1.6;
+  border: 2px solid var(--gray-5, #e0e0e0);
+  background-color: #e0e0e0;
+}

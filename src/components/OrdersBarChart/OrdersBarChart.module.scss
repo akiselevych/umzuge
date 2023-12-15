@@ -1,0 +1,28 @@
+.chartWrapper {
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .chart {
+        margin-bottom: 40px;
+    }
+
+    .chartRangeWrapper {
+        width: 776px;
+        .chart__range {
+            margin-left: 36px;
+        }
+    }
+}
+.toolBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.selectWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}

@@ -1,0 +1,42 @@
+.tableList {
+    border-radius: 10px;
+    border: 1px solid var(--gray-5, #e0e0e0);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.tableListItem {
+    display: flex;
+}
+.cellTitle {
+    color: var(--gray-1, #333);
+    font-size: 16px;
+    font-weight: 900;
+}
+.tableListAddButton {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00538e;
+    border-radius: 50%;
+    img {
+        transition: all 0.3s ease;
+    }
+}
+.tableListCell {
+    padding: 10px;
+    padding-right: 50px;
+    border: none;
+    width: 200px;
+    color: var(--gray-1, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-5, #e0e0e0);
+}

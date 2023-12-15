@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .approve,
+  .decline {
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 10px;
+    transition: 0.2s;
+
+    &:disabled {
+      pointer-events: none;
+			opacity: 0.5;
+    }
+  }
+
+  .approve {
+    background: #00538d;
+    border: 1px solid #00538d;
+    color: #fff;
+
+    &:hover, &.active {
+      background: rgb(50, 196, 99);
+      border-color: rgb(50, 196, 99);
+			opacity: 1;
+    }
+  }
+  .decline {
+    background: #fff;
+    color: #00538d;
+    border: 1px solid #00538d;
+
+    &:hover, &.active{
+      background: #e64040;
+      color: #fff;
+      border-color: #e64040;
+			opacity: 1;
+    }
+  }
+}

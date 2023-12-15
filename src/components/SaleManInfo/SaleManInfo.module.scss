@@ -1,0 +1,137 @@
+.saleMan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  .salary {
+    display: flex;
+    gap: 64px;
+
+    .subtitle {
+      color: var(--grey-80, #bdbdbd);
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .amount {
+      color: var(--blue, #00538e);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px;
+    }
+  }
+
+	.date {
+		display: flex;
+		gap: 24px;
+
+		.group {
+			position: relative;
+	
+			input {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 22px;
+				border: 1px solid var(--gray-5, #e0e0e0);
+				outline: none;
+				background: #fff;
+	
+				width: 200px !important;
+				padding: 13px 16px;
+				border-radius: 10px;
+				border: 1px solid var(--gray-5, #e0e0e0);
+			}
+			.span {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 20px;
+				position: absolute;
+				left: 16px;
+				bottom: 10px;
+				transition: 0.2s;
+	
+				&:first-child {
+					z-index: 1;
+				}
+			}
+	
+			input:focus + .span,
+			.active {
+				bottom: 33px;
+			}
+		}
+	}
+}
+
+.table {
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid var(--gray-5, #e0e0e0);
+	max-height: 475px;
+	overflow-y: auto;
+
+  .cellGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:first-child {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+			
+      .cell {
+				&:first-child {
+          border-top-left-radius: 10px;
+        }
+        &:last-child {
+          border-top-right-radius: 10px;
+        }
+      }
+    }
+    &:last-child {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .cell {
+        &:first-child {
+          border-bottom-left-radius: 10px;
+        }
+        &:last-child {
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 2px solid var(--gray-5, #e0e0e0);
+    }
+
+    .cell {
+			background: #fff;
+      padding: 10px 12px;
+			max-width: 137px;
+			box-sizing: border-box;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			
+      &:not(:last-child) {
+        border-right: 2px solid var(--gray-5, #e0e0e0);
+      }
+    }
+  }
+}
+

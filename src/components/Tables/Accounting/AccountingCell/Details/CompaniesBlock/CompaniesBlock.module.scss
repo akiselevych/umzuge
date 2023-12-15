@@ -1,0 +1,65 @@
+.companies {
+	margin-top: 24px;
+}
+
+.companyWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 24px;
+}
+
+.company {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #dadada;
+}
+
+.info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  border-radius: 16px;
+  border: 1px solid #e9e9e9;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &:not(:last-child) {
+    padding-right: 28px;
+    border-right: 1px solid #e9e9e9;
+  }
+  &:not(:first-child) {
+    padding-left: 28px;
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+
+  .companyIcon {
+    padding: 6px;
+    border-radius: 40px;
+    border: 1px solid #00538d;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+.tableNameCell {
+  min-width: 128px;
+}
+.tableAmountCell {
+  min-width: 96px;
+}

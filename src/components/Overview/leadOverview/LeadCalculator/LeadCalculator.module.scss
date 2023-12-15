@@ -1,0 +1,62 @@
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fieldsGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px 12px;
+}
+
+.submitButton {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  align-self: center;
+  box-sizing: border-box;
+  background: #00538d;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 6px;
+}
+
+.selectContainer {
+  position: relative;
+}
+
+.styledSelect {
+  width: 100%;
+  height: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid var(--gray-5, #e0e0e0);
+  color: #666;
+  border-radius: 10px;
+
+  &:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+}
+
+.selectLabel {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+	color: #666;
+}

@@ -1,0 +1,173 @@
+.container {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: height 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+
+  padding: 34px 20px;
+
+  .time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    grid-column: span 2 / span 2;
+    padding-top: 15px;
+
+    &Toggled {
+      grid-column: span 1 / span 1;
+    }
+
+    &Inner {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+  }
+
+  .name {
+    grid-column: span 1 / span 1;
+    padding-top: 15px;
+  }
+
+  .detailsButton {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    grid-column: span 1 / span 1;
+
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400;
+      background: none;
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.details {
+  opacity: 1;
+
+  transition: opacity 0.5s ease-in-out;
+
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &Label {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &Value {
+    font-size: 20px;
+    color: #8e8e93;
+  }
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 34px 20px;
+  flex-wrap: wrap;
+
+  .changers {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 58px;
+    grid-column: span 1 / span 1;
+
+    .changer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      grid-column: span 1 / span 1;
+
+      button {
+        background: none;
+        font-size: 20px;
+        color: #00538e;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-column: span 1 / span 1;
+
+    &Inner {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-column: span 2 / span 2;
+    }
+  }
+
+  .guests {
+    grid-column: span 2 / span 2;
+    margin-top: 10px;
+
+    &Head {
+      padding-bottom: 10px;
+      color: #00538e;
+      border-bottom: 1px solid #00538e;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &Inner {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &Col {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .guest {
+    &Count {
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 40px;
+    }
+
+    &Item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &Label {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      &Value {
+        font-size: 20px;
+        color: #8e8e93;
+      }
+    }
+  }
+
+  .empty {
+    grid-column: span 1 / span 1;
+  }
+}

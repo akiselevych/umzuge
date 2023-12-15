@@ -1,0 +1,145 @@
+.switcher {
+  display: flex;
+  width: fit-content;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  gap: 20px;
+  align-items: center;
+
+  .line {
+    margin-right: -20px;
+  }
+
+  button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: background 0.3s ease-in;
+    padding: 6px 20px;
+
+    &.active {
+      background: #00538e;
+      color: #fff;
+    }
+  }
+}
+
+.searchCreate {
+  display: flex;
+  justify-content: space-between;
+
+  .search {
+    position: relative;
+    width: fit-content;
+    margin-top: 60px;
+    .searchIcon,
+    .microphoneIcon {
+      position: absolute;
+      top: calc(50% - 12px);
+    }
+    .searchIcon {
+      left: 5px;
+    }
+    .microphoneIcon {
+      cursor: pointer;
+      right: 5px;
+    }
+    input {
+      display: flex;
+      width: 358px;
+      height: 36px;
+      padding: 6px 0px 6px 30px;
+      font-size: 16px;
+      align-items: flex-start;
+      gap: 240px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: rgba(240, 242, 243, 0.75);
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.createButton {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  margin-right: 45px;
+  border-radius: 10px;
+  background: #00538e;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 49px;
+  cursor: pointer;
+  margin-bottom: -17px;
+
+  &Back {
+    color: #00538e;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #00538e;
+    padding: 16px 30px;
+    margin-bottom: 0;
+  }
+}
+
+.circle {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #00538e;
+
+  &Offline {
+    background: #9bd3e3;
+  }
+}
+
+.meetingTitle {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.createContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datePicker {
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+
+  &Container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+
+    &Right {
+      grid-column: span 3 / span 3;
+    }
+  }
+
+  &Left {
+    grid-column: span 1 / span 1;
+  }
+
+  &Title {
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 28px;
+    }
+  }
+}

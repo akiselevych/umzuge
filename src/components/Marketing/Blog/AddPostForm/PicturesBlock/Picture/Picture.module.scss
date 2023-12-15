@@ -1,0 +1,57 @@
+.picturesBlock {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    display: flex;
+    font-size: 16px;
+    color: #949494;
+    gap: 5px;
+    background: none;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0;
+    &.active {
+      color: #00538e;
+      cursor: pointer;
+
+      path {
+        fill: #00538e;
+      }
+    }
+  }
+
+  .picture {
+    cursor: pointer;
+    min-height: 182px;
+    min-width: 184px;
+    max-height: 250px;
+    max-width: 184px;
+    object-fit: contain;
+    &.active {
+      min-height: 181px;
+      min-width: 181px;
+      max-height: 170px;
+      max-width: 170px;
+      border: 1.5px dashed #00538e;
+      padding: 0px 5px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .selector {
+      border: none;
+      font-size: 16px;
+      color: #00538e;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.calendar {
+	display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.notification {
+  position: fixed;
+  left: calc(55% - 127px);
+  bottom: 15%;
+  visibility: hidden;
+}

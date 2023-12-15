@@ -1,0 +1,11 @@
+.daysNames {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+	
+  .dayName {
+    display: flex;
+    justify-content: end;
+    padding: 10px 12px;
+    box-sizing: border-box;
+  }
+}

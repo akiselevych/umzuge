@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 2px solid var(--gray-5, #e0e0e0);
+  border-radius: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--gray-5, #e0e0e0);
+  }
+
+  .cell {
+    padding: 10px;
+    &:not(:last-child) {
+      border-right: 2px solid var(--gray-5, #e0e0e0);
+    }
+  }
+
+  &:first-child {
+    .cell:last-child {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+  gap: 6px;
+  min-height: clamp(6.25rem, -1.25rem + 10vw, 8.75rem);
+  overflow-y: auto;
+
+  &:nth-child(1) {
+    border-top-left-radius: 10px;
+  }
+  &:nth-child(7) {
+    border-top-right-radius: 10px;
+  }
+  &:nth-child(36) {
+    border-bottom-left-radius: 10px;
+  }
+  &:nth-child(42) {
+    border-bottom-right-radius: 10px;
+  }
+
+  &Number {
+    color: #333;
+  }
+
+  &Current {
+    background: #ebf8ff;
+  }
+
+  .notCurrentMonth {
+    color: var(--grey-80, #bdbdbd);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.online {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--blue, #00538e);
+}
+
+.offline {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #bbb;
+}

@@ -1,0 +1,25 @@
+.box {
+  margin-top: 36px;
+}
+
+.container {
+  padding: 40px 0 40px 35px;
+}
+
+.header {
+  padding: 0 0 30px 34px;
+}
+
+.hr {
+  display: block;
+  border: 0;
+  border-top: 2px solid #d9d9d9;
+  margin-bottom: 0;
+}
+
+.meetings {
+  padding-right: 14px;
+  max-height: 52vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

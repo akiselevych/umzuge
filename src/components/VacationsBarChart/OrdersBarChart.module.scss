@@ -1,0 +1,48 @@
+.chartWrapper {
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .chart {
+        margin-bottom: 40px;
+    }
+
+    .chartRangeWrapper {
+        width: 776px;
+        .chart__range {
+            margin-left: 36px;
+        }
+    }
+}
+.toolBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.TextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.TextBlockTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.TextBlockYear {
+    color: #00538e;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.customTooltip {
+    padding: 12px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

@@ -1,0 +1,57 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal {
+        pointer-events: all;
+        position: relative;
+        z-index: 9999;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 80vh;
+        overflow: auto;
+    }
+		.tinyModal {
+			width: 400px;
+		}
+    .smallModal {
+        width: 650px;
+    }
+		.mediumModal {
+			width: 800px;
+		}
+    .largeModal {
+        width: 1080px;
+    }
+    .modalWithHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .modalWithOutHeader {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .modalHeaderClose {
+        width: 28px;
+        height: 28px;
+    }
+    .modalMain {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

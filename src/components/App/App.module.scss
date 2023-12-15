@@ -1,0 +1,14 @@
+@use "styles/variables" as v;
+
+.app {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+}
+.content {
+	flex: 1;
+	overflow-x: hidden;
+}
+.main {
+  margin: 32px 48px 38px 50px;
+}

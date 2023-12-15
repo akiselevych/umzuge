@@ -1,0 +1,139 @@
+@use "../../styles/variables" as v;
+
+.sidebar {
+    background-color: v.$primary-color;
+    padding: 40px;
+    width: 280px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .logo {
+        position: relative;
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .content {
+        position: relative;
+        color: v.$text-color;
+        font-size: 16px;
+        line-height: 22px;
+
+        .displayName {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 48px;
+            overflow: hidden;
+        }
+
+        .charts {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            gap: 12px;
+            text-align: start;
+            margin: 16px 0;
+            max-height: 600px;
+            overflow: auto;
+            transition: 0.4s;
+
+            .chartCard {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                padding: 24px 22px;
+                box-sizing: border-box;
+                background-color: v.$secondary-color;
+                border-radius: 12px;
+
+                img,
+                svg {
+                    height: 50px;
+                }
+            }
+            .active {
+                background-color: rgb(232, 240, 248);
+                border: 2px solid var(--blue, #00538e);
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -24px;
+                left: 5%;
+                width: 90%;
+                height: 1px;
+                background: radial-gradient(
+                    4161599.73% 100% at 100% 0%,
+                    rgba(236, 236, 236, 0.1) 0%,
+                    #ececec 51.29%,
+                    rgba(236, 236, 236, 0.1) 100%
+                );
+            }
+        }
+
+        .accounting {
+            transition: 0.4s;
+        }
+
+        .hidden {
+            position: absolute;
+            transform: translateX(-150px);
+            opacity: 0;
+            visibility: hidden;
+            height: 0px;
+        }
+    }
+
+    .buttons {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        button {
+            width: 100%;
+            display: flex;
+            padding: 16px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 10px;
+            color: #00538d;
+            background: transparent;
+            border: 2px solid #00538d;
+        }
+        .active {
+            color: v.$primary-color;
+            background: #00538d;
+            border: 2px solid transparent;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -24px;
+            left: 5%;
+            width: 90%;
+            height: 1px;
+            background: radial-gradient(
+                4161599.73% 100% at 100% 0%,
+                rgba(236, 236, 236, 0.1) 0%,
+                #ececec 51.29%,
+                rgba(236, 236, 236, 0.1) 100%
+            );
+        }
+    }
+}

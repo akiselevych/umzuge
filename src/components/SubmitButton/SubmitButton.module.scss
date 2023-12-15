@@ -1,0 +1,12 @@
+.submitButton {
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--blue, #00538e);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

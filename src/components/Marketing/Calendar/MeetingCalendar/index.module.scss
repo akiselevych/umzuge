@@ -1,0 +1,237 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0px 31px;
+  padding-bottom: 147px;
+  gap: 20px;
+}
+
+.left {
+  grid-column: span 1 / span 1;
+  box-sizing: border-box;
+}
+
+.right {
+  grid-column: span 3 / span 3;
+}
+
+.label {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &Item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.input {
+  border-radius: 5px;
+  border: 1.5px solid #e0e0e0;
+  width: 100%;
+  padding-left: 15px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.date {
+  &Container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &Title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+
+  &Slot {
+    max-width: 145px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #00538e;
+    text-align: center;
+    color: #00538e;
+    font-size: 16px;
+
+    &Disabled {
+      cursor: not-allowed;
+
+      border: 1px solid #a8a8a8;
+      color: #a8a8a8;
+    }
+
+    &Container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+      &Disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    &Stroke {
+      display: block;
+      width: 15px;
+      height: 3px;
+      background: #00538e;
+
+      &Disabled {
+        background: #a8a8a8;
+      }
+    }
+  }
+}
+
+.modal {
+  width: 100%;
+
+  &Title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 29px;
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Item {
+    padding: 32px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-of-type {
+      border-top: 1px solid #e0e0e0;
+    }
+
+    &Slot {
+      max-width: 213px;
+      width: 100%;
+    }
+
+    &Icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      button {
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &date {
+    &Container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    &Title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+
+    &Slot {
+      display: block;
+      max-width: 145px;
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+      color: #333;
+      font-size: 16px;
+
+      &Container {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      &Stroke {
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: #00538e;
+      }
+    }
+  }
+
+  &AddField {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    img {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  }
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background: #00538e;
+  padding: 16px 40px;
+  color: #fff;
+  max-width: 118px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+
+  &Wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+  }
+}
+
+.submitButton {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background: #00538e;
+  padding: 16px 40px;
+  color: #fff;
+  max-width: 116px;
+  width: 100%;
+  margin: 116px auto 0px auto;
+  cursor: pointer;
+}

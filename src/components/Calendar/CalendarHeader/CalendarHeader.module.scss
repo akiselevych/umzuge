@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+	padding: 0px 0px;
+
+  h2 {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--gray-1, #333);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  div,
+  button {
+    border-radius: 8px;
+    background: #f4f5f6;
+  }
+  .toToday {
+    max-height: 32px;
+    padding: 6px 34px;
+    box-sizing: border-box;
+    color: var(--grey-100, #939393);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+
+    padding: 0px 0px;
+    box-sizing: border-box;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .left {
+    transform: rotate(90deg);
+  }
+  .right {
+    transform: rotate(-90deg);
+  }
+}
+
+.datePicker {
+  position: absolute;
+  top: 0;
+	z-index: 100;
+}

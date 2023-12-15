@@ -1,0 +1,13 @@
+.subtitle {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.picturesContainer {
+  display: flex;
+  gap: 50px;
+}

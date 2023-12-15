@@ -1,0 +1,91 @@
+.enterTimePopUp {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  padding: 16px 16px 32px 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.08);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--gray-1, #333);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    button {
+      color: var(--blue, #00538e);
+			background: none;
+    }
+  }
+
+  .enterTime {
+    display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		.blocks {
+			display: flex;
+		}
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .inputsHeader {
+        color: var(--grey-80, #bdbdbd);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .enterTimeInputs {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        input {
+					padding: 0px 0px;
+          width: 48px;
+          height: 48px;
+          border-radius: 6px;
+          background: #f4f5f6;
+          border: none;
+
+          color: var(--gray-1, #333);
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.semicolumn {
+  margin: 0px 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}

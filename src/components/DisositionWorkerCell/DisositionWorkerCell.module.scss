@@ -1,0 +1,143 @@
+.worker {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px;
+
+  .profile {
+    padding: 4px 0px;
+    display: flex;
+    gap: 12px;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      flex-shrink: 0;
+			object-fit: cover;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      line-height: 24px;
+      font-size: 16px;
+
+      button {
+        display: flex;
+        background: none;
+        padding: 0px 0px;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--gray-6, #f2f2f2);
+  }
+}
+
+.field {
+  min-width: 120px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f4f5f6;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  .fieldName {
+    color: var(--grey-80, #bdbdbd);
+  }
+  .fieldValue {
+    color: var(--blue, #00538e);
+  }
+}
+
+.workingHours {
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding-left: 8px;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+
+  .week {
+    color: var(--blue, #00538e);
+    font-weight: 600;
+  }
+  .day {
+    color: var(--grey-80, #bdbdbd);
+    font-weight: 400;
+  }
+}
+
+.group {
+  position: relative;
+  &::after{
+    content: "\20AC";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 22px 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-5, #e0e0e0);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    outline: none;
+    background: #fff;
+
+    &:disabled {
+      background-color: #f2f2f2;
+    }
+
+    &:focus {
+      .span {
+        top: -10px;
+        background: #000;
+      }
+    }
+  }
+  .span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    transition: 0.2s;
+
+    &:first-child {
+      z-index: 1;
+    }
+  }
+
+  input:focus + .span,
+  .active {
+    top: -10px;
+  }
+}

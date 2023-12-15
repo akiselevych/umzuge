@@ -1,0 +1,64 @@
+.dayCalendar {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  border: 2px solid var(--gray-5, #e0e0e0);
+	height: 65vh;
+}
+
+.offers {
+  max-width: clamp(46.875rem, -28.125rem + 100vw, 96.875rem);
+  height: 240px;
+  overflow: auto;
+}
+
+.noOffers,
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  color: #d1d1d1;
+}
+
+.selectItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid var(--gray-6, #f2f2f2);
+
+  .selectItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 64px;
+    column-gap: 20px;
+    row-gap: 16px;
+    height: 210px;
+    overflow: auto;
+    padding-bottom: 12px;
+  }
+}
+
+.couriers,
+.cars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 24px 24px 0px 24px;
+
+  .title {
+    color: var(--gray-1, #333);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.couriers {
+  border-right: 2px solid var(--gray-6, #f2f2f2);
+}

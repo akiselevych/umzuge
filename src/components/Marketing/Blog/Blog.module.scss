@@ -1,0 +1,158 @@
+.blog {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 71px;
+  padding: 0px 25px 50px 35px;
+}
+
+.addButton {
+  width: 116px;
+  height: 50px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 10px;
+  background: #00538e;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background: #004a7c;
+  }
+}
+
+.backButton {
+  position: absolute;
+  right: 25px;
+  top: -60px;
+  color: #00538e;
+  background: none;
+  cursor: pointer;
+  border: 1px solid #00538e;
+  padding: 3px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 40px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: #004a7c;
+    color: #fff;
+  }
+}
+
+.posts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  height: fit-content;
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1700px) {
+    max-height: 56vh;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .addButton {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    border-radius: 10px;
+    background: #00538e;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background: #004a7c;
+    }
+  }
+}
+
+.createButton {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #00538e;
+  background: none;
+  color: #00538e;
+  font-size: 16px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #00538e;
+    color: #fff;
+  }
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: 159px;
+  height: 77px;
+  margin-bottom: -45px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  button:first-child {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+  }
+  button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 0;
+    border: 1px solid #00538e;
+    color: #00538e;
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+.legendContainer {
+  margin-bottom: -110px;
+  z-index: 0;
+}

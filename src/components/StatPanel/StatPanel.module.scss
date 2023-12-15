@@ -1,0 +1,23 @@
+.statPanel {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    margin-bottom: 32px;
+    // padding: 0 100px;
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .itemLabel {
+        color: var(--grey-100, #939393);
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .itemData {
+        color: var(--gray-1, #333);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
